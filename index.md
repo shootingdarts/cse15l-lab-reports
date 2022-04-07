@@ -9,5 +9,5 @@ My name is David Liu, I am a Math-Computer Science major.
 
 My hobbies:
 * Gaming
-* * ![**Avoid this game**:](C:\Users\max13\Downloads\ljl-spring-919994.png)
+* * ![**Avoid this game**:](https://flyclipart.com/thumb2/ljl-spring-919994.png)
 * Basketball
