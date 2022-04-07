@@ -1,1 +1,1 @@
-![yellowstone](C:\Users\max13\Documents\GitHub\cse15l-lab-reports\20210606_123831.jpg)
+![yellowstone](https://drive.google.com/file/d/1KjLFXVPYMqrYPQkLns9y6n8bVhFPSVvq/view)
