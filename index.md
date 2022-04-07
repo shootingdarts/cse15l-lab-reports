@@ -21,6 +21,7 @@ My hobbies:
 >        4. depression
 >        5. acceptance
 * Basketball
+* Coding
 
 ---
 
