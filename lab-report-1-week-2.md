@@ -5,6 +5,7 @@
 
 ## Remote Access
 To remotely connect to the ieng6 computer, (For Windows) install [Open SSH](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse), you will need to enter this command `ssh cs15lsp22<username>@ieng6.ucsd.edu)` into the VScode terminal, ![VScodeTerminal](VScodeTerminal.png)
+
 where you replace the `<username>` with the letters in your course-specific account(next tutorial will help you find it).
 After entering that command, you will need to enter yes to continue connecting and then enter your password(next tutorial will help you find it).
 * Look up your username(school email) and password for ieng6 computer: [https://sdacs.ucsd.edu/~icc/index.php](https://sdacs.ucsd.edu/~icc/index.php)
@@ -18,19 +19,23 @@ After entering that command, you will need to enter yes to continue connecting a
 * `cp <file dirctory> <file directory>` to copy a file to a directory, the second directory can be another file to override the second file with the first file
 * `cat <file directory>` to check the content of a file
 * `ls` to list the files in your current directory
-* Example: ![Commands](Commands.png)
+* Example: 
+  
+  ![Commands](Commands.png)
 
 ## Secure Copy
 To copy a file from your computer to the remote computer, use the command `scp <file directory> cs15lsp22<username>@ieng6.ucsd.edu`
 * Remember to log out of the remote computer before using this command
 * If it worked, it will ask you to log in to your account and asks for your password
 * Once the copying process is finished: ![SCP](SCP.png)
-you can log out to copy another file
+  
+  you can log out to copy another file
 
 ## SSH Key
 To speed up the process of accessing the remote computer, you can set up a SSH key to eliminate the need of entering password.
 On your computer(log out of remote), use the command `ssh-keygen`.
 Use the same file directory they give you in the parenthesis: ![SSHKey](SSHKey.png)
+
 Do not add a passphrase, leave blank and press enter.
 Save the address for your public key.
 (For Windows) follow this [tutorial](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation) for `ssh-add`.
