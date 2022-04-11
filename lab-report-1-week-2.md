@@ -38,7 +38,7 @@ Log out of your account, use `scp <the directory of your public key> cs15lsp22<u
 * Try logging in again, you won't need to enter your password: ![SSHKeyLogIn](SSHKeyLogIn.png)
 * Same works for `scp` command
 
-# # Optimization
+## Optimization
 To further optimize remote running(secure copying a file), you can combine commands into one line that you can copy everytime you want to copy a file to the remote computer.
 * `ssh` command has one more argument that you can add to perform that action on your remote computer.
 * You can use `;` to add multiple commands into one line.
