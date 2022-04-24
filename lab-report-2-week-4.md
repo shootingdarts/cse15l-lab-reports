@@ -9,7 +9,7 @@
 
 ## Change Two
 * Code change:
-  * ![](Fix2.png)
+  * ![](Image/Fix2.png)
 * Test file:
   * [test-file3.md](https://github.com/shootingdarts/markdown-parser/blob/main/test-file3.md)
 * Symptom:
