@@ -13,7 +13,7 @@
 * Test file:
   * [test-file3.md](https://github.com/shootingdarts/markdown-parser/blob/main/test-file3.md)
 * Symptom:
-  * !IndexOutOfBoundsException: ![](Image/Symptom2.png)
+  * IndexOutOfBoundsException: ![](Image/Symptom2.png)
 * Explanation: Since there are no parentheses in test-file3, the find parentheses indexOf will return 0 thus causing the substring method to find from index 0 to -1 leading to the IndexOutOfBoundsException.
 
 ## Change Three
