@@ -37,4 +37,5 @@
   * MarkdownParseTest.java compiled and ran properly
     * ![](/Image/Test.png)
 * use this format to perform everything in one line `scp -r <directory> ieng6:<target directory>; ssh ieng6 "<commands to run remotely>"`
-  * example: `scp -r .\Documents\GitHub\markdown-parser ieng6:~/; ssh ieng6 "cd markdown-parser"; /software/CSE/oracle-java-17/jdk-17.0.1/bin/javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java; /software/CSE/oracle-java-17/jdk-17.0.1/bin/java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest"`
+  * example (copy the directory and run the JUnit tests): `scp -r .\Documents\GitHub\markdown-parser ieng6:~/; ssh ieng6 "cd markdown-parser; /software/CSE/oracle-java-17/jdk-17.0.1/bin/javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java; /software/CSE/oracle-java-17/jdk-17.0.1/bin/java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest"`
+  * ![](/Image/Combined.png)
