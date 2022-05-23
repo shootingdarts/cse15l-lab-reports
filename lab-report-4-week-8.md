@@ -1,4 +1,5 @@
 ## My Implementation
+* [Repository](https://github.com/shootingdarts/markdown-parser)
 ### Snippet_1
 * Expected: ```[`google.com, google.com, ucsd.edu]```
 * Test: ![](Image/MyTest1.png)
@@ -21,6 +22,7 @@
 * Fix: For the newlines in brackets and parentheses, an easy fix is for the program to check if the content inside the brackets and parentheses contains any `\n`. If either one contains `\n` then do not add the link.
 
 ## Other Implementation
+* [Repository](https://github.com/BellaReal/markdown-parser)
 ### Snippet_1
 * Expected: ```[`google.com, google.com, ucsd.edu]```
 * Test: ![](Image/OtherTest1.png)
