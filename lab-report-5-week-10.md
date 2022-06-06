@@ -5,6 +5,7 @@
 *  ![](Image/573Preview.png)
 ### Actual Ouputs
 * `vimdiff`: ![](Image/vimdiff.png)
+  * The file name is above the output.
 * Left: `[]` Right: `[/url]`
   * The left is an implementation from my group, right is lab 9 implementation.
   * My group's implementation is correct, the lab 9 implementation is wrong.
@@ -12,16 +13,17 @@
     * ![](Image/CodeChange1.png)
     * When checking if it is potentially a link, the if statement should also include `markdown.charAt(nextOpenBracket - 1) != '!'`.
 
-## Test File 574
-* [574.md](https://github.com/shootingdarts/cse15lsp22-markdown-parser/edit/main/test-files/574.md)
+## Test File 510
+* [510.md](https://github.com/shootingdarts/cse15lsp22-markdown-parser/edit/main/test-files/510.md)
 ### Expected Output
 * `[]`
-* ![](Image/574Preview.png)
+* ![](Image/510Preview.png)
 ### Actual Outputs
-* `vimdiff`: ![](Image/vimdiff.png)
-* Left: `[]` Right: `[/url]`
+* `vimdiff`: ![](Image/vimdiff2.png)
+  * The file name is above the output.
+* Left: `[]` Right: `[/uri]`
   * The left is an implementation from my group, right is lab 9 implementation.
   * My group's implementation is correct, the lab 9 implementation is wrong.
-  * Even though the implementation selected the wrong content between the brackets, selected `[foo [bar]` instead of `[foo [bar](/url)]` , the bug would still be fixed if the program just checked for the `!` before the first `[`. If the program filtered this link out, there won't be another open bracket after the closing parenthesis, `](/url2)`. Therefore, the program would produce the expected output despite selecting the wrong bracket combination.
-    * ![](Image/CodeChange1.png)
-    * When checking if it is potentially a link, the if statement should also include `markdown.charAt(nextOpenBracket - 1) != '!'`.
+  * The lab 9 implementation did not check if the `]` and `(` are connected for the link format to be valid. Since the program did not check for that, it counted that that link format as valid.
+    * ![](Image/CodeChange2.png)
+    * After getting the index of the `]` and `(`, create a boolean variable, like `validFormat`, to store true. Then create an if statement that checks if the difference between them is > 1, if true, then set the boolean value to be false. Then add another if statement to the check for potential link, where if `validFormat` is false moves on to find the next link. 
