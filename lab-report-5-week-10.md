@@ -26,4 +26,4 @@
   * My group's implementation is correct, the lab 9 implementation is wrong.
   * The lab 9 implementation did not check if the `]` and `(` are connected for the link format to be valid. Since the program did not check for that, it counted that that link format as valid.
     * ![](Image/CodeChange2.png)
-    * After getting the index of the `]` and `(`, create a boolean variable, like `validFormat`, to store true. Then create an if statement that checks if the difference between them is > 1, if true, then set the boolean value to be false. Then add another if statement to the check for potential link, where if `validFormat` is false moves on to find the next link. 
+    * After getting the index of the `]` and `(`, create a boolean variable, like `validFormat`, to store true. Then create an if statement that checks if the difference between them is > 1, if true, then set the boolean value to be false. Then add another condition to the last if else statement in the image, where if `validFormat` is true proceed to add that link to the list. 
